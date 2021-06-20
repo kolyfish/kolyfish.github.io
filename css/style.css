@@ -1,0 +1,352 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing: border-box;
+    font-family:"微軟正黑體";
+}
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+}
+.topmenu{
+       height: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.topmenu-icon {
+    display: flex;
+    justify-content: flex-end;
+    background: #f6f6f6;
+    padding: 5px;
+}
+.item1 {
+    color: #4460a0;
+  
+    border-right: 1px solid #c7c7c2;
+}
+.item2 {
+    color: #00aaec;
+  }
+.topmenu-icon li{
+text-align: center;
+align-items: center;
+text-decoration:none;
+margin-right: 5px;
+}
+.topmenu-icon li a{
+    padding-right: 5px;
+}
+.topmenu-icon li a:hover{
+    padding-right: 5px;
+    opacity: 0.7; 
+}
+.topmenu-icon li a:focus{
+    background: #ff8;
+    color: black;
+}
+
+.fb, {
+    color:#7388b7;
+    font-size:15px;
+  
+}
+.tw{
+    color:#00aaec;
+    font-size:15px;
+}
+.fb, .tw a{
+     text-decoration:none;
+}
+
+
+.header{
+    display: flex;
+    justify-content:space-between;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+ 
+}
+.header h1{
+   float:left;
+  
+}
+.header h1 a{
+    background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png) no-repeat ;
+    width: 224px;
+    height: 50px;
+    display: block;
+    text-indent: 101%;
+    overflow:hidden;
+    white-space: nowrap;
+}
+.header h1 a:hover{
+    opacity: 0.7; 
+
+}
+.header h1 a:focus{
+    opacity: 0.3; 
+    text-decoration:line-through;
+}
+
+.menu li{
+    text-decoration:none;
+    color:#77e4c9;
+    margin-right: 10px;
+  margin-right:20px
+   }
+.menu li a{
+    text-decoration:none;
+    color:#77e4c9;
+    font-size: 16px;
+}
+.menu li a:after{
+    border-bottom: 5px solid transparent;
+    transition: 0.5s;
+}
+.menu li a:hover:after {
+    opacity:0.7;
+    margin-top: 5px;
+    padding: 5px;
+  
+    border-bottom: solid 5px #00CC99;
+}
+.menu li a:focus{
+    margin-top: 5px;
+    padding: 5px;
+    border-bottom:  3px #336d5e solid ;
+}
+.banner{
+    display:flex;
+    align-items: center;
+    position:relative;
+    z-index: -1;
+    height: 346px;
+    background-image:url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png) ;
+}
+.treans{
+    margin-top: 40px;
+    width: 1024px;
+    height: 100px;
+    padding:10px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    position:absolute;
+    left:0px;
+    top:50x;
+    z-index:1;
+}
+
+.content-prime-1{
+    position:absolute;
+     line-height: 1.2;
+    left:0px;
+    top:14px;
+    color:#ffff;
+    font-size: 30px;
+    z-index: 2;
+}
+
+.col2{
+    margin: 50px 10px;
+}
+.content-second{
+    margin-bottom :20px; 
+}
+.course{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+  
+}
+.course-item {
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px silver;
+}
+
+.course-item{
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+     border-radius:2px;
+  box-shadow: 0px 0px 3px gray;
+}
+.course-item h2{
+    text-align:center;
+    font-size: 40px;
+ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.specailforpic{
+  width: 250px;
+  height: 170px;
+
+  position:relative;
+ }
+.specailforpic img{
+  position:absolute;
+  right:-6px;
+    top:-10px;
+  max-width: 100%;
+  max-height: 90%;
+}
+
+.course-item p{
+padding: 10px;
+}
+.different{
+margin-bottom: 50px;
+}
+.different h2{
+    margin-bottom: 20px;
+}
+table{
+    width: 842px;
+    height: 251x;
+    border: 4px;
+    margin: 0 auto;
+    cellspacing: 3px;
+    cellpadding: 2px;
+}
+.price th,.price td{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+
+}
+
+.price th{
+    padding: 10px;
+    background: #f7f7f7;
+    color: #000;
+    font-weight:bolder;
+    text-align:left;
+}
+.price td{
+    padding: 10px;
+
+}
+h2{
+    margin: 10px;
+  font-size:25px;
+  text-align:center;
+  font-weight:bolder;
+}
+.col-prime{
+  color:#00a67d;
+}
+
+.col2 h2{
+    font-size: 25px;
+    margin: 0px 0px 5px 0px;
+    text-align: center;
+    font-weight:bolder;
+    line-height:10px
+
+}
+form:focus-within{
+    background: linear-gradient(#1d614f,#ccd8d5);
+    color: #000;
+}
+
+.col1{
+   
+    background: linear-gradient(#00644b,#009771);
+    padding: 20px 30px;
+   border-radius:32px;
+}
+.col1 h2{
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 10px;
+}
+.col1 form{
+  display:flex;
+  justify-content:space-between;
+  margin:30px 0px 10px 0px;
+
+}
+.col1 form textarea{
+    width: 400px;
+}
+
+.side-col2{
+     display:block;
+}
+.col1-main{
+    font-size: 25px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+.subfooter{
+    color:#e12d80;
+}
+.footer ul li{
+    margin-bottom: 2px;
+}
+.footer ul li a:hover{
+    opacity: 0.8;
+    padding: 4px;
+    line-height: 1.2;
+   
+}
+.footer ul li a:focus-within{
+    background-color: #1d614f;
+    border-radius:2px;
+    box-shadow: 0px 0px 3px gray;
+
+}
